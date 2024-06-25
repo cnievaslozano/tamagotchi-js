@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!-- NES CSS-->
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <!-- CSS STYLES-->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="tamagotchi">
+            <div class="tamagotchi__container">
+                <p class="nes-balloon from-left nes-pointer" id="statusTamagotchi">
+                    Hello!, I'm Emo Pou
+                </p>
+                <img src="https://giodotae.carrd.co/assets/images/image02.png?v=7addbd82" alt="Pou emo tamagotchi">
+            </div>
+            <section class="live" id="lives">
+                <i class="nes-icon is-large heart"></i>
+                <i class="nes-icon is-large heart"></i>
+                <i class="nes-icon is-large heart"></i>
+                <i class="nes-icon is-large heart"></i>
+                <i class="nes-icon is-large heart"></i>
+            </section>
+        </div>
+        <div class="action">
+            <h2>EAT</h2>
+            <progress id="eatBar" class="nes-progress is-error" value="10" max="10"></progress>
+            <div class="tamagotchi__options">
+                <button class="nes-btn is-error">Pizza</button>
+                <button class="nes-btn is-error">Chicken</button>
+                <button class="nes-btn is-error">Salad</button>
+            </div>
+        </div>
+        <div class="action">
+            <h2>PLAY</h2>
+            <progress id="playBar" class="nes-progress is-success" value="10" max="10"></progress>
+            <div class="tamagotchi__options">
+                <button class="nes-btn is-success">Football</button>
+                <button class="nes-btn is-success">Cards</button>
+                <button class="nes-btn is-success">Computer</button>
+            </div>
+        </div>
+        <div class="action">
+            <h2>FIGHT</h2>
+            <progress id="fightBar" class="nes-progress is-primary" value="10" max="10"></progress>
+            <div class="tamagotchi__options">
+                <button class="nes-btn is-primary">Energuia</button>
+                <button class="nes-btn is-primary">Churumbel</button>
+                <button class="nes-btn is-primary">Loboestepario</button>
+            </div>
+        </div>
+        <div class="action">
+            <h2>SLEEP</h2>
+            <progress id="sleepBar" class="nes-progress" value="10" max="10"></progress>
+            <div class="tamagotchi__options">
+                <button class="nes-btn">Snap</button>
+                <button class="nes-btn">Sleep</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>l
